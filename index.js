@@ -3,8 +3,8 @@ const SES = new AWS.SES();
 const axios = require("axios")
 
 exports.handler = async event => {
-    const myQoute = await axios.get("https://zenquotes.io/api/today")
-    const dailyQoute = `"${ myQoute.data[0].q}" - ${myQoute.data[0].a}`
+    const myQuote = await axios.get("https://zenquotes.io/api/today")
+    const dailyQuote = `"${ myQuote.data[0].q}" - ${myQuote.data[0].a}`
 
     const params = {
         Destination: {
@@ -12,7 +12,7 @@ exports.handler = async event => {
         },
         Message: {
             Body: {
-                Html: { Data: dailyQoute }
+                Html: { Data: dailyQuote }
             },
             Subject: {
                 Data: "Daily Inspirational Qoute"
