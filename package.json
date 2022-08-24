@@ -1,0 +1,14 @@
+{
+  "name": "lambda-email-demo",
+  "version": "1.0.0",
+  "description": "lamda email demo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bfeld@chain.io",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
