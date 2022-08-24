@@ -15,7 +15,7 @@ exports.handler = async event => {
                 Html: { Data: dailyQuote }
             },
             Subject: {
-                Data: "Daily Inspirational Qoute"
+                Data: "Daily Inspirational Quote"
             },
         },
         Source: 'bryant.feld@gmail.com'
